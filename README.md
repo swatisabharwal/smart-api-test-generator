@@ -1,6 +1,3 @@
-my_first_ai_agent
-API Key: AIzaSyAoElfYFZ91s9REyuc8RijiPoPfa7_x9xI
-
 # Smart API Test Case Generator
 
 An AI-powered agent that automatically generates comprehensive API test cases and executable Python test code for any REST API endpoint.
@@ -43,32 +40,6 @@ pip install google-generativeai requests pyyaml
    - Get your free API key from [Google AI Studio](https://aistudio.google.com/)
    - Update `src/config.py` with your API key
 
-## 🚀 Usage
-
-Run the generator:
-```bash
-python src/main.py
-```
-
-### Example Output
-
-**Input:** `GET /users/{id}`
-
-**Generated Test Cases:**
-- Positive: Valid user retrieval with existing ID
-- Negative: Non-existent user ID, invalid ID format
-- Boundary: Minimum/maximum valid IDs
-- Security: Unauthorized access, SQL injection attempts
-
-**Generated Executable Code:**
-```python
-def test_valid_users_retrieval():
-    url = BASE_URL + '/users/123'
-    response = requests.get(url)
-    assert response.status_code == 200
-    assert response.json() is not None
-```
-
 ## 🏗️ Project Structure
 
 ```
@@ -89,13 +60,6 @@ smart-api-test-generator/
 - **API Testing**: Create security and boundary tests automatically
 - **Learning**: Understand comprehensive API testing strategies
 
-## 🔮 Future Enhancements
-
-- Support for OpenAPI/Swagger file input
-- Multiple output formats (Java, JavaScript, etc.)
-- Integration with CI/CD pipelines
-- Advanced security test patterns
-
 ## 🤝 Contributing
 
 This is a learning project, but suggestions and improvements are welcome!
@@ -106,7 +70,7 @@ This project is for educational and portfolio purposes.
 
 ## 👨‍💻 About
 
-Created by [Your Name] as a portfolio project demonstrating:
+Created by Swati Sabharwal as a portfolio project demonstrating:
 - AI integration in testing tools
 - Python development skills
 - Understanding of API testing best practices
